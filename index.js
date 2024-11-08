@@ -11,6 +11,8 @@ app.get("/", (req, res) => {
   res.send("Hello World Tasks App Node Test Root"); // .send 브라우저에 찍힘
 });
 
-app.use(require('./routes/getRoutes'));
+app.use(require("./routes/getRoutes"));
+app.use(require("./routes/deleteRoutes"));
+app.use(require("./routes/postRoutes"));
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
