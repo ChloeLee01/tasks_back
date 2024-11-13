@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello World Tasks App Node Test Root"); // .send 브라우저에 찍힘
+  res.send("node deploy test"); // .send 브라우저에 찍힘
 });
 
 app.use(require("./routes/getRoutes"));
